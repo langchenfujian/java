@@ -1,5 +1,0 @@
-[
-	{"$match": {"age": {"$gt" : 30}}},
-	{"$group": {"_id" : "$sex", "count" : {"$sum" : 1}}},
-	{"$project" : {"_id" : 0, "sex" : "$_id", "count" : 1}}
-]
